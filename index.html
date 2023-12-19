@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List <image src="todo.png" height="50px"></h1>
+        <input type="text" id="input-field" placeholder="Add Task">
+        <label for="deadlineInput">Deadline:</label>
+        <input type="datetime-local" id="deadlineInput">
+        <label for="categorySelect">Category:</label>
+        <select id="categorySelect" >
+            <option value="">--SELECT--</option>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="shopping">Shopping</option>
+        </select>
+        <button onclick="addTodo()">Add</button>
+        <ul id="todo-container">
+                
+        </ul>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
